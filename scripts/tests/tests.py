@@ -17,7 +17,9 @@ def main():
     ]
 
     tests_results_dir = "test-reports-python"
-    XMLTestRunner(output=tests_results_dir).run(TestSuite(suites))
+    result = XMLTestRunner(output=tests_results_dir).run(TestSuite(suites))
+    if not result.wasSuccessful():
+        sys.exit(1)
 
 
 if __name__ == "__main__":
