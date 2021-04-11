@@ -1,9 +1,14 @@
 #!/bin/bash
 
 SCRIPT_DIR=$(dirname $0)
-. ${SCRIPT_DIR}/utilities.sh
 
 cd ${SCRIPT_DIR}
+if [ ! -f ".env" ]; then
+  echo "Properties file '.env' does not exists! It has to be created from '.env.template'."
+  exit 1
+fi
+
+. .env
 
 if [ ! -d "${DATA_DIR}" ]; then
   mkdir -p ${DATA_DIR}
@@ -16,11 +21,8 @@ if [ ! -d "${DB_DIR}" ]; then
   echo "Created 'db'directory: ${DB_DIR}."
 fi
 
-header "Stopping docker container(s) ..."
 docker-compose rm -s -f || true
 
-header "Starting docker container(s) ..."
 docker-compose --project-name weather2db --env-file .env --log-level DEBUG up -d --remove-orphans --build
-footer "Docker container(s) started."
 
 cd -

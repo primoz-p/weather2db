@@ -91,8 +91,11 @@ def main():
     while True:
         try:
             collect()
-            print("Waiting another {0} minutes...".format(collect_time))
-            sleep(60 * collect_time)
+            if collect_time > 0:
+                print("Waiting another {0} minutes...".format(collect_time))
+                sleep(60 * collect_time)
+            else:
+                break
         except KeyboardInterrupt:
             print("Manual break by user")
 
