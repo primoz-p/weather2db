@@ -36,4 +36,4 @@ jobs:
         pip install -r scripts/tests/test_requirements.txt
     - name: Tests
       run: |
-        python scripts/tests/tests.py
+        ./tests.sh
