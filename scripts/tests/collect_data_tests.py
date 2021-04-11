@@ -20,7 +20,7 @@ class Test(TestCase):
 
         self.assertEqual(datetime.datetime(year=2021, month=4, day=11, hour=11, minute=0),
                          weather_data.datetime)
-        self.assertEqual("oblačnoX", weather_data.cloudiness)
+        self.assertEqual("oblačno", weather_data.cloudiness)
         self.assertEqual("jugozahodnik", weather_data.wind_direction)
         self.assertEqual(9.0, weather_data.temperature)
         self.assertEqual(80.0, weather_data.humidity)
