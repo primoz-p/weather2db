@@ -1,0 +1,124 @@
+<data id="MeteoSI_WebMet_observation_xml">
+  <language>sl</language>
+  <credit>Agencija Republike Slovenije za okolje</credit>
+  <credit_url>http://meteo.arso.gov.si/</credit_url>
+  <image_url>http://meteo.arso.gov.si/uploads/meteo/style/img/logo/ARSO_vreme_blue_small.png</image_url>
+  <suggested_pickup>25 minutes after hour</suggested_pickup>
+  <suggested_pickup_period>60</suggested_pickup_period>
+  <webcam_url_base>http://meteo.arso.gov.si//uploads/probase/www/observ/webcam/</webcam_url_base>
+  <icon_url_base>http://meteo.arso.gov.si/uploads/meteo/style/img/weather/</icon_url_base>
+  <icon_format>png</icon_format>
+  <docs_url>http://meteo.arso.gov.si/uploads/meteo/help/sl/xml_service.html</docs_url>
+  <disclaimer_url>http://meteo.arso.gov.si/uploads/meteo/help/sl/disclaimer.html</disclaimer_url>
+  <copyright_url>http://meteo.arso.gov.si/uploads/meteo/help/sl/copyright.html</copyright_url>
+  <privacy_policy_url>http://meteo.arso.gov.si/uploads/meteo/help/sl/notice.html</privacy_policy_url>
+  <managing_editor>gp.arso@gov.si (Agencija Republike Slovenije za okolje)</managing_editor>
+  <web_master>gp.arso@gov.si (Agencija Republike Slovenije za okolje)</web_master>
+  <generator>AutoPro/ProCreator</generator>
+  <meteosi_url/>
+  <two_day_history_url>http://meteo.arso.gov.si//uploads/probase/www/observ/surface/text/sl/observation_LJUBL-ANA_BRNIK_history.html</two_day_history_url>
+  <metData>
+    <dd_decodeText>SW</dd_decodeText>
+    <dd_icon>SW</dd_icon>
+    <dd_longText>jugozahodnik</dd_longText>
+    <dd_shortText>JZ</dd_shortText>
+    <dd_val>246</dd_val>
+    <dd_var_desc>Smer vetra</dd_var_desc>
+    <dd_var_unit>°</dd_var_unit>
+    <ddff_icon>lightSW</ddff_icon>
+    <domain_altitude>364.0</domain_altitude>
+    <domain_countryIsoCode2>SI</domain_countryIsoCode2>
+    <domain_geoType>general</domain_geoType>
+    <domain_id>64771022</domain_id>
+    <domain_lat>46.2178</domain_lat>
+    <domain_lon>14.4775</domain_lon>
+    <domain_longTitle>Letališče Jožeta Pučnika Ljubljana</domain_longTitle>
+    <domain_meteosiId>LJUBL-ANA_BRNIK_</domain_meteosiId>
+    <domain_parentId>SI_GORENJSKA_</domain_parentId>
+    <domain_shortTitle>BRNIK - LETALIŠČE</domain_shortTitle>
+    <domain_title>LJUBLJANA/BRNIK</domain_title>
+    <ff_icon>light</ff_icon>
+    <ff_maximum>5</ff_maximum>
+    <ff_maximum_kmh>18</ff_maximum_kmh>
+    <ff_minimum>0</ff_minimum>
+    <ff_minimum_kmh>0</ff_minimum_kmh>
+    <ff_val>2.2</ff_val>
+    <ff_val_kmh>8</ff_val_kmh>
+    <ff_value>3</ff_value>
+    <ff_value_kmh>11</ff_value_kmh>
+    <ff_var_desc>Hitrost vetra</ff_var_desc>
+    <ff_var_unit>m/s</ff_var_unit>
+    <ffmax_val/>
+    <ffmax_val_kmh/>
+    <ffmax_var_desc>Sunki vetra</ffmax_var_desc>
+    <ffmax_var_unit>m/s</ffmax_var_unit>
+    <msl>1020</msl>
+    <msl_mb>1020</msl_mb>
+    <msl_var_desc>Tlak</msl_var_desc>
+    <msl_var_unit>hPa</msl_var_unit>
+    <nn_decodeText>7/8 .. 8/8</nn_decodeText>
+    <nn_icon-wwsyn_icon>overcast</nn_icon-wwsyn_icon>
+    <nn_icon>overcast</nn_icon>
+    <nn_shortText-wwsyn_longText>oblačno</nn_shortText-wwsyn_longText>
+    <nn_shortText>oblačno</nn_shortText>
+    <note/>
+    <p>974</p>
+    <p_mb>974</p_mb>
+    <p_var_desc>Tlak</p_var_desc>
+    <p_var_unit>hPa</p_var_unit>
+    <pa_shortText/>
+    <pa_var_desc>Tendenca tlaka</pa_var_desc>
+    <pa_var_unit/>
+    <rh>80</rh>
+    <rh_var_desc>Vlažnost</rh_var_desc>
+    <rh_var_unit>%</rh_var_unit>
+    <rr24h_val/>
+    <rr24h_var_desc>Padavine v zadnjih 24h</rr24h_var_desc>
+    <rr24h_var_unit>mm</rr24h_var_unit>
+    <rrHh>24</rrHh>
+    <rrHh_var_desc>Interval merjenja padavin</rrHh_var_desc>
+    <rrHh_var_unit>h</rrHh_var_unit>
+    <snow/>
+    <snow_var_desc>Skupna višina snežne odeje</snow_var_desc>
+    <snow_var_unit>cm</snow_var_unit>
+    <snowNew_val/>
+    <snowNew_var_desc>Novozapadli sneg</snowNew_var_desc>
+    <snowNew_var_unit>cm</snowNew_var_unit>
+    <sunrise>11.04.2021 6:23 CEST</sunrise>
+    <sunset>11.04.2021 19:44 CEST</sunset>
+    <t>9</t>
+    <t_degreesC>9</t_degreesC>
+    <t_var_desc>Temperatura</t_var_desc>
+    <t_var_unit>°C</t_var_unit>
+    <td>6</td>
+    <td_degreesC>6</td_degreesC>
+    <td_var_desc>Temperatura rosišča</td_var_desc>
+    <td_var_unit>°C</td_var_unit>
+    <title>AAXX</title>
+    <tnsyn/>
+    <tnsyn_var_desc>Minimalna temperatura</tnsyn_var_desc>
+    <tnsyn_var_unit>°C</tnsyn_var_unit>
+    <tsUpdated>11.04.2021 13:20 CEST</tsUpdated>
+    <tsUpdated_day>Nedelja CEST</tsUpdated_day>
+    <tsUpdated_RFC822>11 Apr 2021 11:20:00 +0000</tsUpdated_RFC822>
+    <tsUpdated_UTC>11.04.2021 11:20 UTC</tsUpdated_UTC>
+    <tsValid_issued>11.04.2021 13:00 CEST</tsValid_issued>
+    <tsValid_issued_day>Nedelja CEST</tsValid_issued_day>
+    <tsValid_issued_RFC822>11 Apr 2021 11:00:00 +0000</tsValid_issued_RFC822>
+    <tsValid_issued_UTC>11.04.2021 11:00 UTC</tsValid_issued_UTC>
+    <tw/>
+    <tw_var_desc>Temperatura vode</tw_var_desc>
+    <tw_var_unit>°C</tw_var_unit>
+    <txsyn/>
+    <txsyn_var_desc>Maksimalna temperatura</txsyn_var_desc>
+    <txsyn_var_unit>°C</txsyn_var_unit>
+    <valid>11.04.2021 13:00 CEST</valid>
+    <valid_day>Nedelja CEST</valid_day>
+    <valid_UTC>11.04.2021 11:00 UTC</valid_UTC>
+    <vis_unit>km</vis_unit>
+    <vis_value>20</vis_value>
+    <windchill/>
+    <wwsyn_icon/>
+    <wwsyn_longText/>
+    <wwsyn_shortText/></metData>
+</data>

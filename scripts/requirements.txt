@@ -1,0 +1,5 @@
+datetime
+mysql-connector-python
+python-decouple
+requests
+xmlrunner

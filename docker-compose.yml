@@ -1,0 +1,45 @@
+version: "3.5"
+
+services:
+
+  db:
+    # https://hub.docker.com/_/mysql
+    image: mysql
+    container_name: db
+    hostname: db
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    ports:
+      - 3306:3306
+    volumes:
+      - ${DATA_DIR}/db:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+
+  adminer:
+    image: adminer
+    container_name: adminer
+    depends_on:
+      - db
+    restart: always
+    ports:
+      - 8080:8080
+
+  weather2db:
+    build: .
+    container_name: weather2db
+    depends_on:
+      - db
+    restart: always
+    environment:
+      - HOSTNAME=db
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - WEATHER_DATA_XML_URL=${WEATHER_DATA_XML_URL}
+      - COLLECT_TIME_MIN=${COLLECT_TIME_MIN}
+
