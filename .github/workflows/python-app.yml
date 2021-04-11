@@ -37,6 +37,3 @@ jobs:
     - name: Tests
       run: |
         ./tests.sh
-    - name: Test with pytest
-      run: |
-        pytest
