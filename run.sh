@@ -18,7 +18,7 @@ fi
 DB_DIR=${DATA_DIR}/db/
 if [ ! -d "${DB_DIR}" ]; then
   mkdir -p ${DB_DIR}
-  echo "Created 'db'directory: ${DB_DIR}."
+  echo "Created 'db' directory: ${DB_DIR}."
 fi
 
 docker-compose rm -s -f || true

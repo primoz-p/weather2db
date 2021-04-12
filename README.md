@@ -30,6 +30,9 @@ Adminer tool is used for administration and be reached here: http://localhost:80
 * Template for properties file.
 * Check file for details.
 
+#### .env.tests
+* Properties file used for tests.
+
 #### collect_data.sh
 * Start collecting data
 * Database is automatically prepared if needed.
@@ -44,8 +47,11 @@ Adminer tool is used for administration and be reached here: http://localhost:80
 #### run.sh
 * Start composing Docker container and run collection of data
 
-#### tests.sh
-* Run tests
+#### scripts/tests/tests.py
+* Basic tests
+
+#### tests_db.sh
+* Run DB tests (using Docker container)
 
 ## Development Python Environment
 Create virtual environment:
