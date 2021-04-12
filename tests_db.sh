@@ -33,6 +33,8 @@ if [ $ret -ne 0 ]; then
   exit 1
 fi
 
+docker-compose rm -s -f || true
 rm .env.tests.work
+rm -rf ${DATA_DIR}
 
 cd -
