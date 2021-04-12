@@ -14,6 +14,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+    - name: Install test dependencies
+      run: |
+        pip install -r scripts/tests/test_requirements.txt
     - name: Tests
       run: |
         ./tests_db.sh
