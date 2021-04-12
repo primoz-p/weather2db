@@ -23,6 +23,7 @@ echo "DATA_DIR=${DATA_DIR}" >> .env.tests.work
 
 docker-compose --project-name weather2db --env-file .env.tests.work --log-level DEBUG up -d --remove-orphans --build
 
+echo "Waiting 30s for container to collect data."
 sleep 30
 
 python scripts/tests/db_checks.py

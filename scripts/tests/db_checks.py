@@ -52,7 +52,7 @@ def check_results(self, cursor, data_elements, query):
             results = cursor.fetchall()
             self.assertEqual(1, len(results), "Weather data should never be duplicated.")
             result = results[0]
-            self.assertEqual(weather_data.datetime, result[1])
+            self.assertEqual(weather_data.datetime, result[0])
             # commented because sometimes there is no data and sometimes/later there is or even data is changed
             # self.assertEqual(weather_data.cloudiness, result[1])
             # self.assertEqual(weather_data.wind_speed, result[2])
