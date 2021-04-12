@@ -1,0 +1,19 @@
+# Run DB checks to verify that data was successfully saved to database.
+name: DB Checks
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Tests
+      run: |
+        ./tests_db.sh
