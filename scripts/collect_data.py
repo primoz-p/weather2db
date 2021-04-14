@@ -18,6 +18,11 @@ def convert_xml_to_weather_record(data_element):
     cloudiness = data_element.findtext("nn_shortText", default="")
     wind_direction = data_element.findtext("dd_longText", default="")
     wind_speed = data_element.findtext("ff_value", default=data_element.findtext("ff_val"))
+    findtext = data_element.findtext("msl")
+    if findtext:
+        pressure = float(findtext)
+    else:
+        pressure = None
 
     return WeatherData(
         datetime.datetime.strptime(data_element.find("tsValid_issued_UTC").text, "%d.%m.%Y %H:%M %Z"),
@@ -26,7 +31,7 @@ def convert_xml_to_weather_record(data_element):
         float(wind_speed),
         float(data_element.findtext("t")),
         float(data_element.findtext("rh")),
-        float(data_element.findtext("msl")))
+        pressure)
 
 
 def save_to_db(connection, weather_data):
